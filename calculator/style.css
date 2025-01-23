@@ -1,0 +1,30 @@
+.container{
+    border: 2px solid black;
+    width: 20%;
+    height: 400px;
+}
+
+#input{
+    font-size: 30px;
+    width: 85%;
+    margin: 20px;
+    border: 2px solid rgb(89, 86, 86);
+}
+
+.btn-box{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.btn{
+    text-align: center;
+    align-items: center;
+    /* justify-content: center; */
+    border: 1px solid black;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+}
