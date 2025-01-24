@@ -1,6 +1,6 @@
 function ComputerMove(){
     let random = Math.random()*3;
-    if(random >= 0 && random <= 1)
+    if(random > 0 && random <= 1)
         return "Rock";
     else if(random > 1 && random <= 2)
         return "Paper";
@@ -36,7 +36,7 @@ function result(userMove , ComputerMove){
         else if(ComputerMove === "Paper")
             return "User won.";
         else
-            return "User won.";
+            return "Computer won.";
     }
 }
 
