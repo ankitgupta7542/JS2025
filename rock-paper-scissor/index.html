@@ -7,31 +7,34 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
+    <h1>Please Enter Your Choice</h1>
     <div class="container">
         <button
       onclick="
      let computerChoice = ComputerMove();
-     alert(result('Rock' , computerChoice));
+     alert(showResult('Rock' , computerChoice , result('Rock' , computerChoice)));
     "
     >
-      Rock
+      <img src="./assets/rock.jpeg" alt="">
     </button>
 
     <button
       onclick="
     computerChoice = ComputerMove();
-    alert(result('Paper' , computerChoice));
+    alert(showResult('Paper' , computerChoice , result('Rock' , computerChoice)));
+
    "
     >
-      Paper
+      <img src="./assets/pexels-photo-268349.webp" alt="">
     </button>
     <button
       onclick="
     computerChoice = ComputerMove();
-    alert(result('Scissor' , computerChoice));
+    alert(showResult('Scissor' , computerChoice , result('Rock' , computerChoice)));
     "
     >
-      Scissor
+      <img src="./assets/pexels-photo-4226901.webp" alt="">
     </button>
     </div>
   </body>

@@ -13,7 +13,7 @@ function result(userMove , ComputerMove){
     {
         if(ComputerMove === "Rock")
             return "its a tie.";
-        else if(ComputerMove == "Paper")
+        else if(ComputerMove === "Paper")
             return "Computer won.";
         else
             return "User won.";
@@ -34,12 +34,16 @@ function result(userMove , ComputerMove){
         if(ComputerMove === "Scissor")
             return "its a tie.";
         else if(ComputerMove === "Paper")
-            return "Computer won.";
+            return "User won.";
         else
             return "User won.";
     }
 }
 
+
+function showResult(userMove , ComputerMove , result){
+    return `You have choosen ${userMove} , Computer has choosen ${ComputerMove} and The result is ${result}.`;
+}
 
 
 

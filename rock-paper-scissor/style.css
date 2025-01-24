@@ -5,5 +5,31 @@
 }
 
 .container{
-    border: 2px solid red;
+    border: 2px solid black;
+    height: 100%;
+    width: 9%;
+    justify-content: center;
+    margin: 5% 43%;
+}
+
+button{
+    /* width: 10%;
+    height: 10%; */
+    /* padding: 40px; */
+    margin: 8%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img{
+    /* justify-content: space-evenly; */
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
 }
