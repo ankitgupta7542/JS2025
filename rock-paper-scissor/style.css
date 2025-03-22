@@ -1,28 +1,26 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
-.container{
+/* .container{
     border: 2px solid black;
     height: 100%;
     width: 9%;
     justify-content: center;
     margin: 5% 43%;
-}
+} */
 
-button{
-    /* width: 10%;
-    height: 10%; */
-    /* padding: 40px; */
+/* button{
+   
     margin: 8%;
     display: flex;
     justify-content: space-evenly;
 }
 
 img{
-    /* justify-content: space-evenly; */
+    
     border: 2px solid black;
     height: 100px;
     width: 100px;
@@ -32,4 +30,149 @@ h1{
     text-align: center;
     justify-content: center;
     margin-top: 5%;
+} */
+
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Container for buttons */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Buttons */
+button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+button:hover {
+  transform: scale(1.1);
+  border-color: white;
+}
+
+/* Button Images */
+button img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover img {
+  transform: rotate(10deg);
+}
+
+/* Result Section Styling */
+.final-result {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  min-width: 300px;
+  text-align: left;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* User Move */
+.user-move {
+  color: #ffcc00;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-left: 5px solid #ffcc00;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+/* Computer Move */
+.computer-move {
+  color: #ff5733;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-left: 5px solid #ff5733;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+/* Result Message */
+.result {
+  color: #00ff99;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+/* Score Count */
+.scoreCount {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  button {
+    width: 80%;
+    max-width: 200px;
+    margin: 10px auto;
+  }
+
+  button img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .final-result {
+    width: 90%;
+  }
 }

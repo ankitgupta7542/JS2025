@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock-Paper-Scissor</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
 
-    <h1>Please Enter Your Choice</h1>
-    <div class="container">
-        <button
-      onclick="
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock-Paper-Scissor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Please Enter Your Choice</h1>
+  <div class="container">
+    <button onclick="
+      let userMove = 'Rock';
      let computerChoice = ComputerMove();
-     alert(showResult('Rock' , computerChoice , result('Rock' , computerChoice)));
-    "
-    >
-      <img src="./assets/rock.jpeg" alt="">
+    //  alert(showResult('Rock' , computerChoice , result('Rock' , computerChoice)));
+    // showResult('Rock' , computerChoice , result('Rock', computerChoice));
+    
+    displayScore('Rock' , computerChoice , result('Rock', computerChoice));
+    scoreCount(score.win, score.loss, score.tie);
+
+    ">
+      <img src="./assets/rock.jpeg" alt="Rock">
     </button>
 
-    <button
-      onclick="
+    <button onclick="
     computerChoice = ComputerMove();
-    alert(showResult('Paper' , computerChoice , result('Paper' , computerChoice)));
+    displayScore('Paper' , computerChoice , result('Paper', computerChoice));
+    scoreCount(score.win, score.loss, score.tie);
 
-   "
-    >
-      <img src="./assets/pexels-photo-268349.webp" alt="">
+   ">
+      <img src="./assets/pexels-photo-268349.webp" alt="Paper">
     </button>
-    <button
-      onclick="
+    <button onclick="
     computerChoice = ComputerMove();
-    alert(showResult('Scissor' , computerChoice , result('Scissor' , computerChoice)));
-    "
-    >
-      <img src="./assets/pexels-photo-4226901.webp" alt="">
+    displayScore('Scissor' , computerChoice , result('Scissor', computerChoice));
+    scoreCount(score.win, score.loss, score.tie);
+    ">
+      <img src="./assets/pexels-photo-4226901.webp" alt="Scissor">
     </button>
-    </div>
-  </body>
-  <script src="./script.js"></script>
+
+
+  </div>
+  <div class="final-result">
+    <h3 class="user-move"></h3>
+    <h3 class="computer-move"></h3>
+    <h3 class="result"></h3>
+
+    <h2 class="scoreCount"></h2>
+    
+  </div>
+</body>
+<script src="./script.js"></script>
+
 </html>
