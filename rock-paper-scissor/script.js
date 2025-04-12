@@ -72,9 +72,9 @@ console.log(score);
 // }
 
 function displayScore(userMove, ComputerMove, result) {
-    document.querySelector('.user-move').innerText = `User has choosen: ${userMove}`;
-    document.querySelector('.computer-move').innerText = `Computer has choosen: ${ComputerMove}`;
-    document.querySelector('.result').innerText = `Result : ${result}`;
+    document.querySelector('.user-move').innerHTML = `User has choosen: ${userMove}`;
+    document.querySelector('.computer-move').innerHTML = `Computer has choosen: ${ComputerMove}`;
+    document.querySelector('.result').innerHTML = `Result : ${result}`;
 }
 
 function scoreCount(win , loss , tie)

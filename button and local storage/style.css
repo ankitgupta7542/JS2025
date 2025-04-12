@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn{
+    text-align: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+    margin: 250px 600px;
+    background-color: #7fff50;
+}
+
+.js-even {
+    background-color: #ff4848;
+}
+
+.js-odd {
+    background-color: #7fff50;
+}
